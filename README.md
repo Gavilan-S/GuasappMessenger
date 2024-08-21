@@ -6,8 +6,7 @@ En este repositorio, les presento el proyecto del taller sobre la implementació
 
 ### Diagrama del Patrón
 
-![GuassapMessenger]()
-
+![GuassapMessenger](https://github.com/user-attachments/assets/568bc9af-8b2c-442f-acdf-14ab4f92a91d)
 
 ### Lenguaje utilizado
 
