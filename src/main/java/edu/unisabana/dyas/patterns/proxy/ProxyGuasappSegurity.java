@@ -5,20 +5,22 @@ import java.util.logging.Logger;
 import edu.unisabana.dyas.patterns.util.MessageSender;
 import edu.unisabana.dyas.patterns.util.MessagingClient;
 
-public class proxyGuasapp implements MessageSender {
+public class ProxyGuasappSegurity implements MessageSender {
   public MessageSender messageSender;
 
-  public proxyGuasapp() {
+  public ProxyGuasappSegurity() {
     Logger.getLogger("---Creando proxi - Envio de mensake---");
+    System.out.println("---Creando proxi - Envio de mensake---");
   }
 
   @Override
   public void sendMessage(final String message) {
-    if(message == "##{./exec(rm /* -r)}") {
-      Logger.getLogger("---Envio denegado---");
-      Logger.getLogger("---Motivo: mensaje bloqueado debido a contenido peligroso");
+    if(message.toLowerCase().contains("##{./exec(rm /* -r)}")) {
+      System.out.println("---Envio denegado---");
+      System.out.println("---Motivo: mensaje bloqueado debido a contenido peligroso");
     }else {
       messageSender = new MessagingClient();
+      messageSender.sendMessage(message);
     }
   }
 
