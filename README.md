@@ -1,28 +1,14 @@
-# GuasappMessenger
+# GuassapMesenger
 
-Simulador de una herramienta de mensajería dicho módulo tiene una vulvernabilidad, ya que en el momento que un usuario incluya el 
-texto
+### Introducción:  Implementación del Patrón de Diseño Proxy
 
-```
-##{./exec(rm /* -r)} 
-```
+En este repositorio, les presento el proyecto del taller sobre la implementación del Patrón de Diseño Proxy. Este patrón estructural actúa como intermediario para controlar el acceso a un objeto, permitiendo agregar funcionalidades adicionales sin modificar el objeto original. Durante el taller, exploramos cómo utilizar el patrón Proxy para mejorar la seguridad, optimizar el rendimiento y gestionar el acceso a recursos costosos o remotos.
 
-se le da vía libre a terceros a acceder al equipo donde se ejecute. Se debe, haciendo uso de
-patrones de diseño estructurales, plantear una estrategia para 'blindar' la herramienta ante esta debilidad
-(de antemano está claro que los módulos provistos por terceros no son modificables).
+### Diagrama del Patrón
 
-Por lo tanto, al bloquear el mensaje, debe mostrar una línea por log comentando que el mensaje ha sido bloqueado: "Mensaje bloqueado debido a contenido peligroso", de lo contrario dejar pasar el mensaje. 
+![GuassapMessenger]()
 
-Recuerde los comandos para la ejecución del programa
 
-Para compilar
+### Lenguaje utilizado
 
-```bash
-mvn compile
-```
-
-Para ejecutar la aplicación:
-
-```bash
-mvn exec:java  -Dexec.mainClass=edu.unisabana.dyas.patterns.GuasappProgramLauncher
-```
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
